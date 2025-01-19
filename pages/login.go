@@ -15,14 +15,6 @@ func NewLoginPage(page playwright.Page) *LoginPage {
         }
 }
 
-func (l LoginPage) NavigateTo(url string) error {
-        _, err := l.page.Goto(url) 
-        if err != nil {
-            return fmt.Errorf("Failed to navigate to URL: %w", err) 
-        }
-        return nil
-}
-
 func (l LoginPage) EnterUsername(username string) error {
         err := l.page.Fill("#user-name", username) // Recommended approach
         if err != nil {

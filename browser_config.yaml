@@ -1,0 +1,4 @@
+executable_path: "C:/Program Files/Google/Chrome/Application/chrome.exe"
+headless: false
+slow_mo: 5
+app_url: "https://www.saucedemo.com"
